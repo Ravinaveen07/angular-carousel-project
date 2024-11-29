@@ -82,7 +82,7 @@
     }
   }
   
-  /* Wave animation for cards */
+  
   @keyframes waveEffect {
     0%, 100% {
       transform: translateY(40px); 
