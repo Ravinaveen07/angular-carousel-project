@@ -1,9 +1,9 @@
 <div class="carousel-container">
-    <div class="carousel">
-      <div class="card" *ngFor="let testimonial of testimonials">
-        <img src="testimonial.image" [alt]="testimonial.name" class="avatar" />
-        <h3>{{ testimonial.name }}</h3>
-        <p>{{ testimonial.feedback }}</p>
-      </div>
+  <div class="carousel" [ngStyle]="{'animation-duration': carouselAnimationDuration}">
+    <div class="card" *ngFor="let testimonial of duplicatedTestimonials">
+      <img src="{{testimonial.image}}" [alt]="testimonial.name" class="avatar" />
+      <h3>{{ testimonial.name }}</h3>
+      <p>{{ testimonial.feedback }}</p>
     </div>
   </div>
+</div>
