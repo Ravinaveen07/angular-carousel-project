@@ -1,0 +1,109 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+      );
+      mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+  width: fit-content;
+    position: absolute;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 20s)
+    var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    height: 250px;
+    margin: 0 20px;
+    background: #1d1d1d;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+    animation: waveEffect 12s ease-in-out infinite;
+  }
+  
+  .card img.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  @keyframes infiniteScroll {
+    0% {
+      transform: translateX(0%); 
+    }
+    25% {
+      transform: translateX(-25%); 
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-75%);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+  /* Wave animation for cards */
+  @keyframes waveEffect {
+    0%, 100% {
+      transform: translateY(40px); 
+    }
+    25% {
+      transform: translateY(-40px); 
+    }
+    50% {
+      transform: translateY(40px); 
+    }
+    75% {
+      transform: translateY(-40px);
+    }
+  }
+  
+  .card:nth-child(odd) {
+    animation-delay: 0s;
+  }
+  
+  .card:nth-child(even) {
+    animation-delay: 1.5s;
+  }
+  
+  
