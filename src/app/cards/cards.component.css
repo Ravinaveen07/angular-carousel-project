@@ -30,7 +30,7 @@
     flex: 0 0 300px;
     height: 250px;
     margin: 0 20px;
-    background: #1d1d1d;
+    background: #323232;
     color: #fff;
     
     border-radius: 10px;
@@ -41,20 +41,20 @@
   }
   
   .card img.avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-bottom: 10px;
   }
   
   .card h3 {
     margin: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    
   }
   
   .card p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
   }
   
