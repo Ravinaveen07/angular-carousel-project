@@ -32,7 +32,7 @@
     margin: 0 20px;
     background: #323232;
     color: #fff;
-    
+    border: 0.25px solid rgb(102, 99, 99);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -50,11 +50,13 @@
   .card h3 {
     margin: 10px 0;
     font-size: 16px;
+    color: #999898;
     
   }
   
   .card p {
-    font-size: 12px;
+    color: #d3d0d0;
+    font-size: 16px;
     line-height: 1.5;
   }
   
@@ -103,7 +105,7 @@
   }
   
   .card:nth-child(even) {
-    animation-delay: 1.5s;
+    animation-delay: 2s;
   }
   
   
